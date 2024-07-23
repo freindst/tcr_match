@@ -51,7 +51,7 @@ def main():
     v_b = "TRBV7-9*01"
     j_b = "TRBJ1-5*01"
     cdr3 = "CASSLAVGEGPQHF"
-    df_gene = pd.read_csv('IMGT_GENEs.csv', index_col=0)
+    df_gene = pd.read_csv('IMGT_GENE.csv', index_col=0)
     begin, end, full_seq = get_tcr_seq_cdr_region(df_gene, v_b, j_b, cdr3)
     print(f'CDR3 {cdr3} is at the region between {begin} and {end} AA in\n{full_seq}')
     
